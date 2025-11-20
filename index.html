@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Elizabeth Alarcon</h1>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link" tabindex="0">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#portfolio" class="header__nav-link" tabindex="0">Portfolio</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--contact">
+                        <a role="button" href="#contact" class="header__nav-link" tabindex="0">Contact</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--github">
+                        <a href="https://github.com/cafeli-codes" target="_blank" class="header__nav-link">
+                         <!-- to add icon: -->
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2 class="intro__title">Welcome to My Portfolio</h2>
+            <h2 class="intro__subtitle">I'm Elizabeth Alarcon, a passionate web developer - check out my work below!</h2>
+        </div>
+    </section>
+
+        <section id="portfolio" class="gallery">
+            <div class="container">
+                <div class="gallery__grid">
+
+                    <div class="gallery__item">
+                        <label for="modal-1">
+                            <!-- inline to add image from images folder:-->
+                            <span class="gallery__image-container" style="background-image: url(images/macbookpro.png);"></span>
+                        </label>
+                        <!--- how to know when you're clicking on something:-->
+                        <input type="checkbox" id="modal-1" class="gallery__modal-checkbox">
+                        <!--- background image for project-->
+                        <div class="gallery__modal">
+                            <label for="modal-1" class="gallery__modal-close">&times;</label>
+                            <img src="images/macbookpro.png" alt="Apple MacBook Pro Website Example" class="gallery__modal-image">
+                        </div>
+                        <div class="gallery__item-info">
+                            <span class="gallery-item-title">MacBook Pro</span>
+                            <!-- link to project: -->
+                            <a href="https://apple-mbp.vercel.app/" target="_blank" class="gallery-item-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__item">
+                        <label for="modal-2">
+                            <!-- inline to add image from images folder:-->
+                            <span class="gallery__image-container" style="background-image: url(images/codeswitcher.png);"></span>
+                        </label>
+                        <!--- how to know when you're clicking on something:-->
+                        <input type="checkbox" id="modal-2" class="gallery__modal-checkbox">
+                        <!--- background image for project-->
+                        <div class="gallery__modal">
+                            <label for="modal-2" class="gallery__modal-close">&times;</label>
+                            <img src="images/codeswitcher.png" alt="Code Switcher Website Example" class="gallery__modal-image">
+                        </div>
+                        <div class="gallery__item-info">
+                            <span class="gallery-item-title">Code Switcher</span>
+                            <!-- link to project: -->
+                            <a href="https://codeswitcher.vercel.app/" target="_blank" class="gallery-item-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__item">
+                        <label for="modal-3">
+                            <!-- inline to add image from images folder:-->
+                            <span class="gallery__image-container" style="background-image: url(images/calculator.png);"></span>
+                        </label>
+                        <!--- how to know when you're clicking on something:-->
+                        <input type="checkbox" id="modal-3" class="gallery__modal-checkbox">
+                        <!--- background image for project-->
+                        <div class="gallery__modal">
+                            <label for="modal-3" class="gallery__modal-close">&times;</label>
+                            <img src="images/calculator.png" alt="Calculator Website Example" class="gallery__modal-image">
+                        </div>
+                        <div class="gallery__item-info">
+                            <span class="gallery-item-title">Calculator</span>
+                            <!-- link to project: -->
+                            <a href="https://codepen.io/gambhirsharma/pen/ExwBKop" target="_blank" class="gallery-item-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__item">
+                        <label for="modal-4">
+                            <!-- inline to add image from images folder:-->
+                            <span class="gallery__image-container" style="background-image: url(images/doomscroll.png);"></span>
+                        </label>
+                        <!--- how to know when you're clicking on something:-->
+                        <input type="checkbox" id="modal-4" class="gallery__modal-checkbox">
+                        <!--- background image for project-->
+                        <div class="gallery__modal">
+                            <label for="modal-4" class="gallery__modal-close">&times;</label>
+                            <img src="images/doomscroll.png" alt="Doom Scroll Website Example" class="gallery__modal-image">
+                        </div>
+                        <div class="gallery__item-info">
+                            <span class="gallery-item-title">Doom Scroll</span>
+                            <!-- link to project: -->
+                            <a href="https://codepen.io/cobra_winfrey/pen/oNOMRav" target="_blank" class="gallery-item-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__item">
+                        <label for="modal-5">
+                            <!-- inline to add image from images folder:-->
+                            <span class="gallery__image-container" style="background-image: url(images/glass-gradient-card.png);"></span>
+                        </label>
+                        <!--- how to know when you're clicking on something:-->
+                        <input type="checkbox" id="modal-5" class="gallery__modal-checkbox">
+                        <!--- background image for project-->
+                        <div class="gallery__modal">
+                            <label for="modal-5" class="gallery__modal-close">&times;</label>
+                            <img src="images/glass-gradient-card.png" alt="Glass Gradient Card Website Example" class="gallery__modal-image">
+                        </div>
+                        <div class="gallery__item-info">
+                            <span class="gallery-item-title">Glass Gradient Card</span>
+                            <!-- link to project: -->
+                            <a href="https://codepen.io/Podgro/pen/oNOKYqr" target="_blank" class="gallery-item-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="gallery__item">
+                        <label for="modal-6">
+                            <!-- inline to add image from images folder:-->
+                            <span class="gallery__image-container" style="background-image: url(images/computerdio.png);"></span>
+                        </label>
+                        <!--- how to know when you're clicking on something:-->
+                        <input type="checkbox" id="modal-6" class="gallery__modal-checkbox">
+                        <!--- background image for project-->
+                        <div class="gallery__modal">
+                            <label for="modal-6" class="gallery__modal-close">&times;</label>
+                            <img src="images/computerdio.png" alt="Computer Diorama Website Example" class="gallery__modal-image">
+                        </div>
+                        <div class="gallery__item-info">
+                            <span class="gallery-item-title">Computer Diorama</span>
+                            <!-- link to project: -->
+                            <a href="https://codepen.io/ricardoolivaalonso/pen/poYEpwP" target="_blank" class="gallery-item-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact__title">Contact Me</h2>
+            <p class="contact__description">Feel free to reach out to me at any time!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2025 Elizabeth Alarcon. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
